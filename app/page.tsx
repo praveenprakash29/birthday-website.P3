@@ -163,7 +163,7 @@ export default function Home() {
           {/* Cute Romantic Background Emojis */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
-            {Array.from({ length: 80 }).map((_, i) => {
+            {Array.from({ length: 20 }).map((_, i) => {
 
               const emojis = [
   "🐷",
@@ -181,8 +181,8 @@ export default function Home() {
                   key={i}
                   className="absolute animate-[floating_3s_ease-in-out_infinite] opacity-90"
                   style={{
-                    left: `${Math.random() * 100}%`,
-                    top: `${Math.random() * 100}%`,
+                    left: `${(i * 5) % 100}%`,
+                    top: `${(i * 7) % 100}%`,
                     fontSize:
   typeof window !== "undefined"
     ? window.innerWidth < 768
@@ -190,7 +190,7 @@ export default function Home() {
       : `${18 + Math.random() * 35}px`
     : "20px",
                     animationDuration: `${2 + Math.random() * 4}s`,
-                    transform: `rotate(${Math.random() * 360}deg)`
+                    transform: `rotate(${i * 20}deg)`
                   }}
                 >
                   {emojis[Math.floor(Math.random() * emojis.length)]}
@@ -215,8 +215,8 @@ export default function Home() {
                   key={i}
                   className="absolute text-pink-300 animate-ping"
                   style={{
-                    left: `${Math.random() * 100}%`,
-                    top: `${Math.random() * 100}%`,
+                    left: `${(i * 5) % 100}%`,
+                    top: `${(i * 7) % 100}%`,
                     fontSize: "30px",
                     animationDuration: `${1 + Math.random() * 2}s`,
                   }}
@@ -310,8 +310,8 @@ export default function Home() {
                   key={i}
                   className="absolute text-pink-300 animate-ping"
                   style={{
-                    left: `${Math.random() * 100}%`,
-                    top: `${Math.random() * 100}%`,
+                    left: `${(i * 5) % 100}%`,
+                    top: `${(i * 7) % 100}%`,
                     fontSize: "30px",
                     animationDuration: `${1 + Math.random() * 2}s`,
                   }}
@@ -436,7 +436,7 @@ export default function Home() {
 
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
-            {Array.from({ length: 80 }).map((_, i) => {
+            {Array.from({ length: 20 }).map((_, i) => {
 
               const emojis = [
   "🐷",
@@ -453,8 +453,8 @@ export default function Home() {
                   key={i}
                   className="absolute animate-[floating_3s_ease-in-out_infinite] opacity-90"
                   style={{
-                    left: `${Math.random() * 100}%`,
-                    top: `${Math.random() * 100}%`,
+                    left: `${(i * 5) % 100}%`,
+                    top: `${(i * 7) % 100}%`,
                     fontSize:
   typeof window !== "undefined"
     ? window.innerWidth < 768
