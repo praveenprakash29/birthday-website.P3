@@ -74,18 +74,9 @@ export default function Home() {
 
          
           // Animate wrong buttons
-          wrongBtns.forEach((btn) => {
+         
 
-            (btn as HTMLElement).style.transition =
-              "all 1s ease";
 
-            (btn as HTMLElement).style.opacity = "0";
-
-            (btn as HTMLElement).style.transform =
-              "scale(0.4) translateY(50px)";
-          });
-
-          
 
           if (priyankaBtn) {
 
