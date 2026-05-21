@@ -68,19 +68,11 @@ export default function Home() {
       if (updatedButtons.length >= 3) {
 
         // Disable clicking temporarily
-        const allBtns =
-          document.querySelectorAll(".game-btn");
-
-        allBtns.forEach((btn) => {
-          (btn as HTMLButtonElement).disabled = true;
-        });
 
         // WAIT 30 SECONDS
         setTimeout(() => {
 
-          const wrongBtns =
-            document.querySelectorAll(".wrong-btn");
-
+         
           // Animate wrong buttons
           wrongBtns.forEach((btn) => {
 
@@ -93,8 +85,7 @@ export default function Home() {
               "scale(0.4) translateY(50px)";
           });
 
-          const priyankaBtn =
-            document.getElementById("priyanka-btn");
+          
 
           if (priyankaBtn) {
 
