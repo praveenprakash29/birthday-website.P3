@@ -453,9 +453,10 @@ export default function Home() {
                   style={{
                     left: `${Math.random() * 100}%`,
                     top: `${Math.random() * 100}%`,
-                    fontSize: window.innerWidth < 768
-  ? `${12 + Math.random() * 18}px`
-  : `${18 + Math.random() * 35}px`,
+                    fontSize:
+  typeof window !== "undefined" && window.innerWidth < 768
+    ? `${12 + Math.random() * 18}px`
+    : `${18 + Math.random() * 35}px`,
                     animationDuration: `${2 + Math.random() * 4}s`,
                   }}
                 >
