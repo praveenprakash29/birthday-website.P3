@@ -183,17 +183,12 @@ export default function Home() {
                   style={{
                     left: `${(i * 5) % 100}%`,
                     top: `${(i * 7) % 100}%`,
-                    fontSize:
-  typeof window !== "undefined"
-    ? window.innerWidth < 768
-      ? `${12 + Math.random() * 18}px`
-      : `${18 + Math.random() * 35}px`
-    : "20px",
-                    animationDuration: `${2 + Math.random() * 4}s`,
+                   fontSize: "20px",
+                    animationDuration: "3s",
                     transform: `rotate(${i * 20}deg)`
                   }}
                 >
-                  {emojis[Math.floor(Math.random() * emojis.length)]}
+                  {emojis[i % emojis.length]}
                 </div>
               );
             })}
@@ -455,16 +450,11 @@ export default function Home() {
                   style={{
                     left: `${(i * 5) % 100}%`,
                     top: `${(i * 7) % 100}%`,
-                    fontSize:
-  typeof window !== "undefined"
-    ? window.innerWidth < 768
-      ? `${12 + Math.random() * 18}px`
-      : `${18 + Math.random() * 35}px`
-    : "20px",
-                    animationDuration: `${2 + Math.random() * 4}s`,
+                   fontSize: "20px",
+                    animationDuration: "3s",
                   }}
                 >
-                  {emojis[Math.floor(Math.random() * emojis.length)]}
+                  {emojis[i % emojis.length]}
                 </div>
               );
             })}
