@@ -213,7 +213,7 @@ export default function Home() {
                     left: `${(i * 5) % 100}%`,
                     top: `${(i * 7) % 100}%`,
                     fontSize: "30px",
-                    animationDuration: `${1 + Math.random() * 2}s`,
+                    animationDuration: "2s",
                   }}
                 >
                   💖
@@ -308,7 +308,7 @@ export default function Home() {
                     left: `${(i * 5) % 100}%`,
                     top: `${(i * 7) % 100}%`,
                     fontSize: "30px",
-                    animationDuration: `${1 + Math.random() * 2}s`,
+                    animationDuration: "2s",
                   }}
                 >
                   🐖
@@ -384,8 +384,7 @@ export default function Home() {
                     "-translate-x-94 -translate-y-106",
                   ];
 
-                  const random =
-                    positions[Math.floor(Math.random() * positions.length)];
+                  const random = positions[0];
 
                   e.currentTarget.className =
                     `game-btn bg-gradient-to-r from-rose-500 to-pink-500 text-white py-4 md:py-5 rounded-2xl md:rounded-3xl text-lg md:text-xl font-bold shadow-xl transition-all duration-300 transform ${random}`;
@@ -599,7 +598,7 @@ pointer-events-none
     "
   >
     <source
-      src="/birthday.mp4.mp4"
+      src="/birthday.mp4"
       type="video/mp4"
     />
   </video>
